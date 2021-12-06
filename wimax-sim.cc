@@ -1,25 +1,3 @@
-/* -*- Mode:C++; c-file-style:"gnu"; indent-tabs-mode:nil; -*- */
-/*
- *  Copyright (c) 2007,2008, 2009 INRIA, UDcast
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation;
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * Author: Mohamed Amine Ismail <amine.ismail@sophia.inria.fr>
- *                              <amine.ismail@udcast.com>
- */
-
-//
 // Default network topology includes a base station (BS) and 2
 // subscriber station (SS).
 
@@ -190,11 +168,12 @@ int main (int argc, char *argv[])
   ss[0]->AddServiceFlow (DlServiceFlowUgs);
   ss[1]->AddServiceFlow (UlServiceFlowUgs);
 
-  AnimationInterface anim ("animWIMAC.xml");
-  anim.SetConstantPosition(ssNodes.Get(0), 1.0, 2.0);
-  //anim.SetConstantPosition(bsNodes.Get(0), 1.0, 2.0);
-  anim.SetConstantPosition(ssNodes.Get(1), 2.0, 3.0);
-  //anim.SetConstantPosition(bsNodes.Get(1), 2.0, 3.0);
+
+  //NetAnim
+  AnimationInterface anim("animWIMAC.xml");
+  anim.SetConstantPosition(ssNodes.Get(0), 1.0, 3.0);
+  anim.SetConstantPosition(ssNodes.Get(1), 4.0, 6.0);
+  anim.SetConstantPosition(bsNodes.Get(0), 7.0, 8.0);
 
   NS_LOG_INFO ("Starting simulation.....");
   Simulator::Run ();
