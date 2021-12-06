@@ -1,0 +1,77 @@
+<anim ver="netanim-3.108" filetype="animation" >
+<node id="0" sysId="0" locX="91" locY="31" />
+<node id="1" sysId="0" locX="75" locY="49" />
+<node id="2" sysId="0" locX="49" locY="32" />
+<nu p="c" t="0" id="0" r="255" g="0" b="0" />
+<nu p="c" t="0" id="1" r="255" g="0" b="0" />
+<nu p="c" t="0" id="2" r="255" g="0" b="0" />
+<nonp2plinkproperties id="0" ipAddress="10.1.1.1~00:00:00:00:00:01" channelType="ns3::SimpleOfdmWimaxChannel" />
+<nonp2plinkproperties id="0" ipAddress="127.0.0.1~00:00:00:00:00:00" channelType="Unknown channel" />
+<nonp2plinkproperties id="1" ipAddress="10.1.1.2~00:00:00:00:00:02" channelType="ns3::SimpleOfdmWimaxChannel" />
+<nonp2plinkproperties id="1" ipAddress="127.0.0.1~00:00:00:00:00:00" channelType="Unknown channel" />
+<nonp2plinkproperties id="2" ipAddress="10.1.1.3~00:00:00:00:00:03" channelType="ns3::SimpleOfdmWimaxChannel" />
+<nonp2plinkproperties id="2" ipAddress="127.0.0.1~00:00:00:00:00:00" channelType="Unknown channel" />
+<ip n="0" >
+<address >10.1.1.1</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="0" >
+<address >10.1.1.1</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="1" >
+<address >10.1.1.2</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="1" >
+<address >10.1.1.2</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="2" >
+<address >10.1.1.3</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ip n="2" >
+<address >10.1.1.3</address>
+
+<address >127.0.0.1</address>
+
+</ip>
+<ipv6 n="0" >
+<address >::1</address>
+
+</ipv6>
+<ipv6 n="1" >
+<address >::1</address>
+
+</ipv6>
+<ipv6 n="2" >
+<address >::1</address>
+
+</ipv6>
+<nu p="s" t="0" id="0" w="1" h="1" />
+<nu p="s" t="0" id="1" w="1" h="1" />
+<nu p="s" t="0" id="2" w="1" h="1" />
+<ncs ncId="0" n="RemainingEnergy" t="DOUBLE" />
+<nu p="p" t="0.25" id="0" x="1" y="3" />
+<nu p="p" t="0.25" id="1" x="4" y="6" />
+<nu p="p" t="0.25" id="2" x="7" y="8" />
+<pr uId="1" fId="1" fbTx="6" />
+<wpr uId="1" tId="2" fbRx="6.011863197" lbRx="0" />
+<pr uId="2" fId="2" fbTx="6.011863197" />
+<wpr uId="2" tId="0" fbRx="6.017088682" lbRx="0" />
+<pr uId="3" fId="1" fbTx="6.5" />
+<wpr uId="3" tId="2" fbRx="6.518085869" lbRx="0" />
+<pr uId="4" fId="2" fbTx="6.518085869" />
+<wpr uId="4" tId="0" fbRx="6.522616904" lbRx="0" />
+</anim>
